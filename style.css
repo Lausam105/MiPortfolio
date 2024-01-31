@@ -1,0 +1,453 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  
+}
+
+
+.body {
+  background-image: url('./img/fondo\ programador.jpg');
+  background-size: cover;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  width: 100%;
+  height: 100%;
+  /*background-size: cover;*/
+ 
+  background-repeat: no-repeat; 
+  /*overflow: hidden;
+  /* background: radial-gradient(ellipse at bottom, #1b2735, #090a0f); */
+  font-weight: 300;
+}
+
+
+
+.boton{
+  display: flex;
+  border: none;
+  background-color: #303050;
+  margin-right: 5%;
+  width: 5%;
+}
+.icono1{ 
+  position:absolute;
+  margin-top: 12px;
+  
+}
+
+.cambiar{
+   color:#303050;
+}
+.icono2{
+ color:#303050;
+ 
+
+ 
+}
+.cambiar2{
+  position:absolute;
+  display: block;
+  color: black;
+}
+
+
+
+.white{
+  background-image: url('./img/fondoProgramador2.jpg');
+}
+
+
+
+
+.menu{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 50px;
+  background-color: #303050;
+  
+}
+
+
+
+
+
+.inicio{
+  margin-left: 20px;
+  font-size: 30px;
+  text-decoration: none;
+  color: #ccf;
+  
+
+}
+
+.inicio:hover{
+  background-color: rgb(53, 57, 111);
+  border-radius: 50%;
+}
+
+.tituloPrincipal{
+  margin: auto;
+  position: relative;
+  text-align: center;
+  color:rgb(218, 201, 181);
+}
+
+.tituloBienvenida{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ /* width: 100vw;
+  height: 100vh;*/
+}
+
+h1{
+  position: absolute;
+}
+
+.borderr{
+  color:rgb(245, 240, 240);
+  font-weight: 900;
+  text-shadow: 3px 3px black;
+  top: 100px;
+  font-size: 3rem;
+  text-shadow:
+  -1px -1px 0 #cce,
+  1px -1px 0 #cce,
+  1px 1px 0 #cce,
+  -1px 1px 0 #cce;
+}
+
+.wave{
+  top:100px;
+  font-weight: 900;
+  font-size: 3rem;
+  color:rgb(48, 114, 236);
+  animation: wave 2s ease-in-out infinite;
+}
+
+@keyframes wave{
+  0%, 100%{
+    clip-path: polygon(
+      0% 47%,
+      10% 48%,
+      33% 54%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+  50%{
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+.contacto{
+  margin-right: 20px;
+  font-size: 30px;
+  text-decoration: none;
+  color: #ccf;
+  
+}
+
+.foto{
+  
+  position:absolute;
+  border:3px solid rgb(60, 58, 101);
+  display: inline-block;
+  transition: all 1s ease-out;
+  bottom: 240px;
+  left: 50px;
+  width:20%;
+  border-radius: 300%;
+  
+}
+
+.foto:hover{
+  transition: all 1s ease-in;
+}
+
+
+.all {
+  display: flex;
+  margin-top: 300px;
+  /*perspective: 1px;*/
+  transform: perspective(300px);
+  will-change: perspective;
+ /* perspective-origin: center center;*/
+  transition: all 1s ease-out;
+  justify-content: center;
+  transform-style: preserve-3d;
+}
+
+
+.all:hover {
+  perspective: 1000px;
+  transition: all 1s ease-in;
+  transform: perspective(10000px) rotateX(0deg);
+}
+.all:hover .text {
+  opacity: 1;
+}
+.all:hover div {
+  opacity: 1;
+  transition-delay: 0s;
+}
+.all:hover .explainer {
+  opacity: 0;
+}
+
+.left, .center, .right, .lefter, .righter {
+  width: 200px;
+  height: 150px;
+  transform-style: preserve-3d;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  box-shadow: 0 0 20px 5px rgba(100, 100, 255, 0.4);
+  opacity: 0;
+  transition: all 0.3s ease;
+  transition-delay: 1s;
+  position: relative;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: rgb(110, 145, 210);
+  cursor: pointer;
+  background-blend-mode: color-burn;
+}
+.left:hover, .center:hover, .right:hover, .lefter:hover, .righter:hover {
+  box-shadow: 0 0 30px 10px rgba(28, 28, 202, 0.6);
+  background-color: #ccf;
+}
+
+.text {
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 0.3s ease;
+  bottom: 0;
+  left: 5px;
+  position: absolute;
+  will-change: transform;
+  color: #fff;
+  border: 6px solid #33a;
+  border-radius: 200%;
+  background-color: #33a;
+  text-shadow: 0 0 5px rgba(100, 100, 255, 0.6);
+  font-size: 1.3rem;
+  text-align: center;
+}
+.negro{
+  color:black;
+  border: none;
+  background-color:#cce;
+}
+
+.lefter {
+  transform: translateX(-60px) translateZ(-50px) rotateY(-10deg);
+  background-image: url(./img/trabajos.png);
+  
+}
+
+.left {
+  transform: translateX(-30px) translateZ(-25px) rotateY(-5deg);
+  background-image: url(./img/skills.png);
+}
+
+.center {
+  opacity: 1;
+  background-image: url(./img/pngegg.png);
+}
+
+.right {
+  transform: translateX(30px) translateZ(-25px) rotateY(5deg);
+  background-image: url(./img/291716_github_logo_social\ network_social_icon.png);
+}
+
+.righter {
+  transform: translateX(60px) translateZ(-50px) rotateY(10deg);
+  background-image: url(./img/correo.png);
+}
+
+.explainer {
+  font-weight: 800;
+  font-size: 4rem;
+  text-align: center;
+  font-family:'Courier New', Courier, monospace;
+  color: #fff;
+  transition: all 0.6s ease;
+  width: 100%;
+  height: 100%;
+  background-color: #303050;
+  background-image: radial-gradient(circle at center top, #cce, #33a);
+  border-radius: 10px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.black{
+  color:black;
+}
+
+
+.enlace{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 150px;
+}
+
+.enlace2{
+  display: flex;
+    position: relative;
+    bottom: 150px;
+    width: 200px;
+    height: 150px;
+  
+}
+
+form{
+  margin: auto;
+  margin-top: 100px;
+  width:50%;
+}
+
+
+.acercade{
+  width:70%;
+  margin-left: 25%;
+  margin-top: 5%;
+  color: #cce;
+  font-size: 1.5rem;
+  background-color: rgb(141, 141, 231);
+  
+}
+
+footer{
+  bottom: 0;
+  margin-top: 200px;
+}
+@media screen and (min-width: 400px) and (max-width: 767px ) {
+  .left, .center, .right, .lefter, .righter {
+    width: 80px;
+    height: 55px;
+    position: relative;
+   background-position: center center;
+   background-size: contain;
+   background-repeat: no-repeat;
+  }
+  
+
+  .borderr{
+    color:rgb(245, 240, 240);
+    font-weight: 900;
+    text-shadow: 3px 3px black;
+    top: 100px;
+    font-size: 2rem;
+    text-shadow:
+    -1px -1px 0 #cce,
+    1px -1px 0 #cce,
+    1px 1px 0 #cce,
+    -1px 1px 0 #cce;
+  }
+  .foto{
+  
+    position:absolute;
+    border:3px solid rgb(60, 58, 101);
+    display: inline-block;
+    transition: all 1s ease-out;
+    bottom: 255px;
+    left: 210px;
+    width:30%;
+    border-radius: 300%;
+    
+  }
+  
+  .wave{
+    top:100px;
+    font-weight: 900;
+    font-size: 2rem;
+    color:rgb(48, 114, 236);
+    animation: wave 2s ease-in-out infinite;
+  }
+  .enlace{
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    width: 80px;
+    height: 55px;
+
+  }
+
+  
+  .enlace2{
+    display: flex;
+    position: relative;
+    bottom: 55px;
+    width: 80px;
+    height: 55px;
+    
+  }
+  .explainer {
+    font-weight: 800;
+    font-size: 3rem;
+    color: #fff;
+    transition: all 0.6s ease;
+    width: 100%;
+    height: 100%;
+    background-color: #303050;
+    background-image: radial-gradient(circle at center top, #cce, #33a);
+    border-radius: 10px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .black{
+    color:black;
+  }
+   .lefter {
+    transform: translateX(-40px) translateZ(-50px) rotateY(-10deg);
+  
+  }
+  
+  .left {
+    transform: translateX(-20px) translateZ(-25px) rotateY(-5deg);
+    
+  }
+  
+  .center {
+    opacity: 1;
+    
+  }
+  
+  .right {
+    transform: translateX(20px) translateZ(-25px) rotateY(5deg);
+   
+  }
+  
+  .righter {
+    transform: translateX(40px) translateZ(-50px) rotateY(10deg);
+  
+  }
+    
+  }
+  
