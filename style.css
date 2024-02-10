@@ -12,14 +12,13 @@
   background-size: cover;
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   width: 100%;
-  height: 100%;
-  /*background-size: cover;*/
- 
-  background-repeat: no-repeat; 
+  background-repeat: repeat-y; 
   /*overflow: hidden;
   /* background: radial-gradient(ellipse at bottom, #1b2735, #090a0f); */
-  font-weight: 300;
+  /*font-weight: 300;*/
 }
+
+
 
 
 
@@ -341,49 +340,125 @@ form{
 }
 
 footer{
-  bottom: 0;
   margin-top: 200px;
 }
-@media screen and (min-width: 400px) and (max-width: 767px ) {
+@media screen and (min-width: 300px) and (max-width: 500px ) {
+
+  .body {
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    font-weight: 300;
+  }
+  .menu{
+    justify-content:space-evenly;
+    width: 100vw;
+    height: 70px;
+  
+    
+  }
+  .main{
+    height: 55vh;
+  }
+
+  
+.inicio{
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #ccf;
+  
+
+}
+
+
+.tituloPrincipal{
+  margin: auto;
+  margin-top: 15px;
+  font-size: 1rem;
+  position: relative;
+  text-align: center;
+  color:rgb(218, 201, 181);
+}
+
+.contacto{
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.boton{
+  margin-right: 80%;
+  width: 5%;
+  margin-bottom: 20px;
+}
+.icono1{ 
+  position:absolute;
+  margin-bottom: 15px;
+  
+}
+
+.cambiar{
+   color:#303050;
+   margin-bottom: 70px;
+}
+
+
+.icono2{
+  color:#303050;
+}
+
+.cambiar2{
+    position:absolute;
+    display: block;
+    color: black;
+    margin-bottom: 15px;
+
+  }
+
   .left, .center, .right, .lefter, .righter {
-    width: 80px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
     position: relative;
    background-position: center center;
    background-size: contain;
    background-repeat: no-repeat;
   }
   
-
-  .borderr{
-    color:rgb(245, 240, 240);
-    font-weight: 900;
-    text-shadow: 3px 3px black;
-    top: 100px;
-    font-size: 2rem;
-    text-shadow:
-    -1px -1px 0 #cce,
-    1px -1px 0 #cce,
-    1px 1px 0 #cce,
-    -1px 1px 0 #cce;
+  .text {
+    font-size: 0.5rem;
+    text-align: center;
   }
+  
+
+  
   .foto{
   
     position:absolute;
     border:3px solid rgb(60, 58, 101);
     display: inline-block;
-    transition: all 1s ease-out;
-    bottom: 255px;
-    left: 210px;
-    width:30%;
+    bottom: 65vh;
+    left: 30%;
+    width:130px;
     border-radius: 300%;
     
   }
-  
-  .wave{
-    top:100px;
+  .borderr{
+    color:rgb(245, 240, 240);
     font-weight: 900;
-    font-size: 2rem;
+    text-shadow: 3px 3px black;
+    top: 80px;
+    font-size: 1.3rem;
+    text-shadow:
+    -1px -1px 0 #cce,
+    1px -1px 0 #cce,
+    1px 1px 0 #cce,
+    -1px 1px 0 #cce;
+  }  
+  .wave{
+    top:80px;
+    font-weight: 900;
+    font-size: 1.3rem;
     color:rgb(48, 114, 236);
     animation: wave 2s ease-in-out infinite;
   }
@@ -425,12 +500,12 @@ footer{
     color:black;
   }
    .lefter {
-    transform: translateX(-40px) translateZ(-50px) rotateY(-10deg);
+    transform: translateY(-80px) translateZ(-50px) rotateY(-10deg);
   
   }
   
   .left {
-    transform: translateX(-20px) translateZ(-25px) rotateY(-5deg);
+    transform: translateY(-40px) translateZ(-25px) rotateY(-5deg);
     
   }
   
@@ -440,14 +515,387 @@ footer{
   }
   
   .right {
-    transform: translateX(20px) translateZ(-25px) rotateY(5deg);
+    transform: translateY(40px) translateZ(-25px) rotateY(5deg);
    
   }
   
   .righter {
-    transform: translateX(40px) translateZ(-50px) rotateY(10deg);
+    transform: translateY(80px) translateZ(-50px) rotateY(10deg);
   
   }
+
+ 
     
   }
+
+  @media screen and (min-width: 501px) and (max-width: 767px ) {
+ 
+    .body {
+      height: 100vh;
+      width: 100%;
+      background-repeat: no-repeat;
+      font-weight: 300;
+    }
+    .menu{
+      justify-content:space-evenly;
+      width: 100vw;
+      height: 70px;
+    
+      
+    }
+  
+    
+  .inicio{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #ccf;
+    
+  
+  }
+  
+  
+  .tituloPrincipal{
+    margin: auto;
+    margin-top: 15px;
+    font-size: 1rem;
+    position: relative;
+    text-align: center;
+    color:rgb(218, 201, 181);
+  }
+  
+  .contacto{
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+  
+  .boton{
+    margin-right: 80%;
+    width: 5%;
+    margin-bottom: 20px;
+  }
+  .icono1{ 
+    position:absolute;
+    margin-bottom: 15px;
+    
+  }
+  
+  .cambiar{
+     color:#303050;
+     margin-bottom: 70px;
+  }
+  
+  
+  .icono2{
+    color:#303050;
+  }
+  
+  .cambiar2{
+      position:absolute;
+      display: block;
+      color: black;
+      margin-bottom: 15px;
+  
+    }
+  
+    .left, .center, .right, .lefter, .righter {
+      width: 70px;
+      height: 60px;
+      position: relative;
+     background-position: center center;
+     background-size: contain;
+     background-repeat: no-repeat;
+    }
+    
+    .text {
+      font-size: 0.5rem;
+      text-align: center;
+    }
+    
+  
+    
+    .foto{
+    
+      position:absolute;
+      border:3px solid rgb(60, 58, 101);
+      display: inline-block;
+      bottom: 350px;
+      left: 38vw;
+      width:150px;
+      border-radius: 300%;
+      
+    }
+    .borderr{
+      color:rgb(245, 240, 240);
+      font-weight: 900;
+      text-shadow: 3px 3px black;
+      top: 80px;
+      font-size: 1.3rem;
+      text-shadow:
+      -1px -1px 0 #cce,
+      1px -1px 0 #cce,
+      1px 1px 0 #cce,
+      -1px 1px 0 #cce;
+    }  
+    .wave{
+      top:80px;
+      font-weight: 900;
+      font-size: 1.3rem;
+      color:rgb(48, 114, 236);
+      animation: wave 2s ease-in-out infinite;
+    }
+    .enlace{
+      /* display: flex; */
+      /* align-items: center; */
+      /* justify-content: center; */
+      width: 80px;
+      height: 55px;
+  
+    }
+  
+    
+    .enlace2{
+      display: flex;
+      position: relative;
+      bottom: 55px;
+      width: 80px;
+      height: 55px;
+      
+    }
+    .explainer {
+      font-weight: 800;
+      font-size: 3rem;
+      color: #fff;
+      transition: all 0.6s ease;
+      width: 100%;
+      height: 100%;
+      background-color: #303050;
+      background-image: radial-gradient(circle at center top, #cce, #33a);
+      border-radius: 10px;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .black{
+      color:black;
+    }
+    .lefter {
+      transform: translateX(-60px) translateZ(-50px) rotateY(-10deg);
+      background-image: url(./img/trabajos.png);
+      
+    }
+    
+    .left {
+      transform: translateX(-30px) translateZ(-25px) rotateY(-5deg);
+      background-image: url(./img/skills.png);
+    }
+    
+    .center {
+      opacity: 1;
+      background-image: url(./img/pngegg.png);
+    }
+    
+    .right {
+      transform: translateX(30px) translateZ(-25px) rotateY(5deg);
+      background-image: url(./img/291716_github_logo_social\ network_social_icon.png);
+    }
+    
+    .righter {
+      transform: translateX(60px) translateZ(-50px) rotateY(10deg);
+      background-image: url(./img/correo.png);
+    }
+  
+
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px ) {
+ 
+    .body {
+      height: 100vh;
+      width: 100%;
+      background-repeat: no-repeat;
+      font-weight: 300;
+    }
+    .menu{
+      justify-content:space-evenly;
+      width: 100vw;
+      height: 70px;
+    
+      
+    }
+
+    .main{
+      height: 60vh;
+    }
+  
+    
+  .inicio{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #ccf;
+    
+  
+  }
+  
+  
+  .tituloPrincipal{
+    margin: auto;
+    margin-top: 15px;
+    font-size: 1rem;
+    position: relative;
+    text-align: center;
+    color:rgb(218, 201, 181);
+  }
+  
+  .contacto{
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+  
+  .boton{
+    margin-right: 80%;
+    width: 5%;
+    margin-bottom: 20px;
+  }
+  .icono1{ 
+    position:absolute;
+    margin-bottom: 15px;
+    
+  }
+  
+  .cambiar{
+     color:#303050;
+     margin-bottom: 70px;
+  }
+  
+  
+  .icono2{
+    color:#303050;
+  }
+  
+  .cambiar2{
+      position:absolute;
+      display: block;
+      color: black;
+      margin-bottom: 15px;
+  
+    }
+  
+    .left, .center, .right, .lefter, .righter {
+      width: 90px;
+      height: 70px;
+      position: relative;
+     background-position: center center;
+     background-size: contain;
+     background-repeat: no-repeat;
+    }
+    
+    .text {
+      font-size: 0.5rem;
+      text-align: center;
+    }
+    
+  
+    
+    .foto{
+    
+      position:absolute;
+      border:3px solid rgb(60, 58, 101);
+      display: inline-block;
+      bottom: 730px;
+      left: 38vw;
+      width:150px;
+      border-radius: 300%;
+      
+    }
+    .borderr{
+      color:rgb(245, 240, 240);
+      font-weight: 900;
+      text-shadow: 3px 3px black;
+      top: 80px;
+      font-size: 1.3rem;
+      text-shadow:
+      -1px -1px 0 #cce,
+      1px -1px 0 #cce,
+      1px 1px 0 #cce,
+      -1px 1px 0 #cce;
+    }  
+    .wave{
+      top:80px;
+      font-weight: 900;
+      font-size: 1.3rem;
+      color:rgb(48, 114, 236);
+      animation: wave 2s ease-in-out infinite;
+    }
+    .enlace{
+      /* display: flex; */
+      /* align-items: center; */
+      /* justify-content: center; */
+      width: 80px;
+      height: 55px;
+  
+    }
+  
+    
+    .enlace2{
+      display: flex;
+      position: relative;
+      bottom: 55px;
+      width: 80px;
+      height: 55px;
+      
+    }
+    .explainer {
+      font-weight: 800;
+      font-size: 3rem;
+      color: #fff;
+      transition: all 0.6s ease;
+      width: 100%;
+      height: 100%;
+      background-color: #303050;
+      background-image: radial-gradient(circle at center top, #cce, #33a);
+      border-radius: 10px;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .black{
+      color:black;
+    }
+    .lefter {
+      transform: translateX(-60px) translateZ(-50px) rotateY(-10deg);
+      background-image: url(./img/trabajos.png);
+      
+    }
+    
+    .left {
+      transform: translateX(-30px) translateZ(-25px) rotateY(-5deg);
+      background-image: url(./img/skills.png);
+    }
+    
+    .center {
+      opacity: 1;
+      background-image: url(./img/pngegg.png);
+    }
+    
+    .right {
+      transform: translateX(30px) translateZ(-25px) rotateY(5deg);
+      background-image: url(./img/291716_github_logo_social\ network_social_icon.png);
+    }
+    
+    .righter {
+      transform: translateX(60px) translateZ(-50px) rotateY(10deg);
+      background-image: url(./img/correo.png);
+    }
+  
+
+  }
+
   
